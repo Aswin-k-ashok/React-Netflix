@@ -1,0 +1,30 @@
+.border-top{
+    margin-top: 3em;
+    border-top: 7px solid #a9aaaa
+}
+#question{
+    margin-top: 1em;
+}
+
+.footer{
+    color: #a9aaaa;
+    margin-top: 5em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+.footer-contents {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-top: 1em;
+    font-weight: 300;
+}

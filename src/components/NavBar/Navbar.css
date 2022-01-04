@@ -19,7 +19,10 @@
     top:1em
 }
 
+
+
 .navbar #avatar {
+    width: 30px;
     position: fixed;
     right: 1em;
     top:1em;
