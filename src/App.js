@@ -1,24 +1,38 @@
-import React from 'react'
-import { useState } from 'react'
-import Navbar from './components/NavBar/Navbar.jsx'
-import {originals,action,comady,Romance} from './urls'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner.jsx'
-import RowPost from './components/RowPost/RowPost.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import Navbar from './components/NavBar/Navbar.jsx'
+import NetflixLoader from './components/NetflixLoader.jsx'
+import RowPost from './components/RowPost/RowPost.jsx'
+import { action, comady, originals, Romance } from './urls'
 
 function App() {
-  return (
-    <div>
-      <Navbar/>
-      <Banner/>
-      <RowPost url={originals} title='Netflix Originals'/>
-      <RowPost url={action} title='Action' isSmall />
-      <RowPost url={comady} title='comedy' isSmall/>
-      <RowPost url={Romance} title='Romance' isSmall/>
+  const [loading, setLoading] = useState(true)
 
-      <Footer/>
-    </div>
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 4000)
+  })
+
+  return (
+    <>
+      {loading ? (
+        <NetflixLoader />
+      ) : (
+        <div>
+          <Navbar />
+          <Banner />
+          <RowPost url={originals} title='Netflix Originals' />
+          <RowPost url={action} title='Action' isSmall />
+          <RowPost url={comady} title='comedy' isSmall />
+          <RowPost url={Romance} title='Romance' isSmall />
+
+          <Footer />
+        </div>
+      )}
+    </>
   )
 }
 

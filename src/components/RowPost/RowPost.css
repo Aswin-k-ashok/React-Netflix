@@ -1,7 +1,6 @@
 .row{
     margin: left 20px;
     color: #fff;
-    
 }
 
 .posters{
@@ -18,10 +17,25 @@
 .poster {
     max-height: 250px;
     margin-right: 10px;
+    transition: .2s ease-in;
+}
+
+.poster:hover{
+    background: #353535;
+    box-shadow: 0 0 5px #494949, 0 0 15px;
+    max-height: 255px;
 }
 
 .smallPoster {
     max-height: 150px;
     margin-right: 10px;
+    transition: .2s ease-in;
     
+}
+
+.smallPoster:hover{
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px;
+    max-height: 155px;
+
 }
