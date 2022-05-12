@@ -5,8 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 50vw;
+  width: auto;
+  height: 100vh;
   background-color: #000000;
   overflow: hidden; }
   #container netflixintro {

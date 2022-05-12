@@ -23,7 +23,7 @@
 .poster:hover{
     background: #353535;
     box-shadow: 0 0 5px #494949, 0 0 15px;
-    max-height: 255px;
+    /* max-height: 255px; */
 }
 
 .smallPoster {
@@ -36,6 +36,6 @@
 .smallPoster:hover{
     background: #ff96ad;
     box-shadow: 0 0 5px #ff96ad, 0 0 25px;
-    max-height: 155px;
+    /* max-height: 155px; */
 
 }
